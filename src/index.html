@@ -7,40 +7,133 @@
     <title>CV Denys Kravchuk - [JS, React] Frontend developer</title>
   </head>
   <body>
-    <h1>Denys Kravchuk - [JS, React] Frontend developer</h1>
     <div class="container">
-      <div class="header">
-        <!-- <img
-          class="main-img"
-          src="./img/bg.jpg"
+      <div class="cover"></div>
+      <div class="avatar">
+        <img
+          class="avatar__img"
+          src="./img/avatar.jpg"
           alt="photo Denys Kravchuk"
           srcset=""
-          width="100%"
-          height="230"
-        /> -->
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-          obcaecati ratione commodi maxime in illo suscipit quis, officia
-          dolores nihil. Laborum libero soluta vel corrupti fuga veritatis
-          dolore minima possimus.
-        </p>
+          width="340"
+        />
       </div>
-
       <div class="main">
-        <aside>
-          <div class="main">
-            <img
-              class="main-img"
-              src="./img/avatar.jpg"
-              alt="photo Denys Kravchuk"
-              srcset=""
-              width="230"
-              height="230"
-            />
+        <aside class="aside indent">
+          <!-- Contacts -->
+          <div class="block">
+            <h2 class="block__title">Contacts</h2>
+            <ul class="block__list">
+              <li class="list__item">
+                <span class="list__item-title">Phone:</span
+                ><a class="list__item-link" href="tel:+380976530101">
+                  380 (97) 653 0101</a
+                >
+              </li>
+              <li class="list__item">
+                <span class="list__item-title">Email:</span>
+                <a
+                  class="list__item-link"
+                  href="mailto:denis.kravchuk.ua@gmail.com"
+                >
+                  denis.kravchuk.ua@gmail.com</a
+                >
+              </li>
+              <li class="list__item">
+                <span class="list__item-title">Facebook:</span
+                ><a
+                  class="list__item-link"
+                  href="https://www.facebook.com/denis.kravchuk.ua"
+                  target="_blank"
+                  >@denis.kravchuk.ua</a
+                >
+              </li>
+              <li class="list__item">
+                <span class="list__item-title">LinkedIn:</span
+                ><a
+                  class="list__item-link"
+                  href="https://www.linkedin.com/in/denis-kravchuk/"
+                  target="_blank"
+                  >@denis-kravchuk</a
+                >
+              </li>
+              <li class="list__item">
+                <span class="list__item-title">GitHub:</span
+                ><a
+                  class="list__item-link"
+                  href="https://github.com/luminousnow"
+                  target="_blank"
+                  >@luminousnow</a
+                >
+              </li>
+            </ul>
           </div>
+          <!-- /.Contacts -->
+          <!-- Summary -->
+          <div class="block">
+            <h2 class="block__title">Summary</h2>
+            <p class="block__text">
+              Experience in developing web applications using JavaScript, React
+              and Redux. There is also practice and understanding of the
+              principles of the Back-end. Familiar with modern technologies and
+              development tools: HTML5, CSS3, SVG, GitHub, REST API, AJAX.
+              Module bundlers such as Webpack, Parcel <br />
+              I'm experienced in integrating business tools, creation and
+              implementation of business processes. Development of a set of
+              measures to track the company's KPI Creation, implementation of
+              system adaptations and advanced training for new employees.
+            </p>
+          </div>
+          <!-- /.Summary -->
+          <!-- Tech skills -->
+          <div class="block">
+            <h2 class="block__title">Tech skills</h2>
+            <ul class="block__list">
+              <li class="list__item">HTML5</li>
+              <li class="list__item">CSS | SCSS | SASS</li>
+              <li class="list__item">SVG</li>
+              <li class="list__item">JS | React</li>
+              <li class="list__item">REDUX | Saga | Thunk</li>
+              <li class="list__item">MONGO DB | Mangoose</li>
+              <li class="list__item">NODE JS | npm | Express</li>
+              <li class="list__item">GIT | GitHub</li>
+              <li class="list__item">REST API | json</li>
+              <li class="list__item">AJAX | Fetch | Async/Await</li>
+              <li class="list__item">Webpack | Parcel | Gulp | Babel</li>
+              <li class="list__item">DEVTOOLS | Chrome | React | Redux</li>
+              <li class="list__item">VScode | Figma | Avocode | Photoshop</li>
+            </ul>
+          </div>
+          <!-- /.Tech skills -->
+          <!-- Soft skills -->
+          <div class="block">
+            <h2 class="block__title">Soft skills</h2>
+            <ul class="block__list">
+              <li class="list__item">Willingness to learn</li>
+              <li class="list__item">Good communication</li>
+              <li class="list__item">Problem solving</li>
+              <li class="list__item">Proactive</li>
+              <li class="list__item">Teamwork</li>
+            </ul>
+          </div>
+          <!-- /.Soft skills -->
+          <!-- Languages skills -->
+          <div class="block">
+            <h2 class="block__title">Languages skills</h2>
+            <ul class="block__list">
+              <li class="list__item">Ukraine - native</li>
+              <li class="list__item">Russian - native</li>
+              <li class="list__item">Eanglish - A2</li>
+            </ul>
+          </div>
+          <!-- /.Languages skills -->
         </aside>
-        <div class="info"></div>
+        <div class="detail-info">
+          <h1 class="full-name">Denys Kravchuk</h1>
+          <p class="position">Front-end Developer</p>
+        </div>
       </div>
+      <footer class="footer"></footer>
     </div>
     <script src="./index.js"></script>
   </body>

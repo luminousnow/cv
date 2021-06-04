@@ -1,3 +1,20 @@
-.header {
-  height: 230px;
+.cover {
+  position: relative;
+  height: 190px;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(200, 200, 200, 0.8),
+      rgba(200, 200, 200, 0.8)
+    ),
+    url(../img/bg.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.avatar {
+  position: absolute;
+  margin: 50px;
+  border-radius: 50%;
+  overflow: hidden;
 }
