@@ -110,20 +110,25 @@
   }
 }
 
-.achievements__list {
-  &-item {
-    list-style: square;
-  }
-}
-
 .edu__list {
   .list__item {
+    margin-bottom: 30px;
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+    }
+
     &-title {
       color: black;
       text-transform: uppercase;
     }
-    &-description {
+
+    &-subtitle {
       font-style: italic;
+      text-transform: uppercase;
     }
   }
 }
