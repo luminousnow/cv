@@ -107,6 +107,15 @@
       font-style: italic;
       text-transform: uppercase;
     }
+
+    ul {
+      padding: 0px 20px;
+    }
+
+    ul > li {
+      margin-bottom: 7px;
+      list-style: square;
+    }
   }
 }
 
