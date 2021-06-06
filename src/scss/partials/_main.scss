@@ -17,7 +17,7 @@
   }
 }
 
-// <!-- Contacts, Summary, Skills -- >
+// <!-- Aside info -- >
 .list__item {
   margin-bottom: 7px;
 
@@ -32,22 +32,7 @@
   }
 }
 
-.full-name {
-  margin-bottom: 25px;
-
-  color: #fbad0f;
-  text-transform: uppercase;
-}
-
-.position {
-  margin-bottom: 20px;
-
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.block,
-.name {
+.block {
   padding: 15px 30px;
 
   &__title {
@@ -57,25 +42,60 @@
   }
 }
 
+// <!-- Main info -->
+.name {
+  padding: 15px 30px;
+
+  .full-name {
+    margin-bottom: 25px;
+
+    font-size: 3em;
+    color: #fbad0f;
+    text-transform: uppercase;
+  }
+
+  .position {
+    margin-bottom: 20px;
+
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.26;
+
+    text-transform: uppercase;
+  }
+}
+
 .pro__list {
   .list__item {
     margin-bottom: 30px;
 
-    &-title {
-      margin-bottom: 10px;
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+    }
 
-      color: black;
+    &-title {
+      font-size: 1em;
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      line-height: 1.26;
+
       text-transform: uppercase;
     }
     &-link {
-      margin-bottom: 10px;
-
       font-style: italic;
+      font-weight: 600;
+      color: gray;
+
       text-decoration: none;
-      color: black;
     }
 
-    p {
+    & div ~ p {
       margin-bottom: 10px;
     }
 
@@ -99,13 +119,25 @@
     }
 
     &-title {
-      color: black;
+      font-size: 1em;
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      line-height: 1.26;
+
       text-transform: uppercase;
     }
 
     &-subtitle {
       font-style: italic;
+      font-weight: 600;
+
       text-transform: uppercase;
+    }
+
+    a {
+      text-decoration: none;
+      color: gray;
     }
 
     ul {
@@ -131,13 +163,26 @@
     }
 
     &-title {
-      color: black;
+      font-size: 1em;
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      line-height: 1.26;
+
       text-transform: uppercase;
     }
 
     &-subtitle {
       font-style: italic;
+      font-weight: 600;
+      color: gray;
+
       text-transform: uppercase;
+    }
+
+    a {
+      text-decoration: none;
+      color: gray;
     }
   }
 }
