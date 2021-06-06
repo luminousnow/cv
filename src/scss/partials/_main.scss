@@ -7,13 +7,28 @@
   }
 
   .indent {
-    padding-top: 215px;
+    padding-top: 245px;
   }
 
-  .detail-info {
+  .main-info {
     width: 690px;
 
     background-color: #ececec;
+  }
+}
+
+// <!-- Contacts, Summary, Skills -- >
+.list__item {
+  margin-bottom: 7px;
+
+  &-name {
+    padding-right: 15px;
+  }
+
+  &-link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
   }
 }
 
@@ -25,7 +40,7 @@
 }
 
 .position {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   color: #000000;
   text-transform: uppercase;
@@ -39,20 +54,6 @@
     margin-bottom: 15px;
     color: #fbad0f;
     text-transform: uppercase;
-  }
-}
-
-.list__item {
-  margin-bottom: 7px;
-
-  &-name {
-    padding-right: 15px;
-  }
-
-  &-link {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
   }
 }
 
@@ -88,14 +89,30 @@
 
 .work__list {
   .list__item {
+    margin-bottom: 30px;
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+    }
+
     &-title {
       color: black;
       text-transform: uppercase;
     }
+
     &-subtitle {
       font-style: italic;
       text-transform: uppercase;
     }
+  }
+}
+
+.achievements__list {
+  &-item {
+    list-style: square;
   }
 }
 
