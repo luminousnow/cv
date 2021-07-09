@@ -2,24 +2,40 @@
   display: inline-flex;
 
   .aside {
-    width: 430px;
+    width: 65%;
     background-color: #e3e3e3;
+
+    @media screen and (min-width: 768px) {
+      // width: 230px;
+      width: 30%;
+    }
+    @media screen and (min-width: 1200px) {
+      // width: 430px;
+      width: 65%;
+    }
   }
 
   .indent {
     padding-top: 245px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 110px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 245px;
+    }
   }
 
   .main-info {
-    width: 690px;
-
     background-color: #ececec;
   }
 }
 
 // <!-- Aside info -- >
-.list__item {
-  margin-bottom: 7px;
+.aside .list__item {
+  &:not(:last-child) {
+    margin-bottom: 7px;
+  }
 
   &-name {
     padding-right: 15px;
@@ -35,10 +51,24 @@
 .block {
   padding: 15px 30px;
 
+  @media screen and (min-width: 768px) {
+    padding: 10px 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 15px 30px;
+  }
+
   &__title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #fbad0f;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -46,18 +76,30 @@
 .name {
   padding: 15px 30px;
 
-  .full-name {
-    margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    padding: 10px 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 15px 30px;
+  }
 
-    font-size: 3em;
+  .full-name {
+    margin-bottom: 10px;
+
+    font-size: 2em;
     color: #fbad0f;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 25px;
+    }
   }
 
   .position {
-    margin-bottom: 20px;
-
-    font-size: 2em;
+    font-size: 1.2em;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.1em;
@@ -69,8 +111,9 @@
 
 .pro__list {
   .list__item {
-    margin-bottom: 30px;
-
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
     &-container {
       display: flex;
       justify-content: space-between;
@@ -96,7 +139,9 @@
     }
 
     & div ~ p {
-      margin-bottom: 10px;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
 
     &-paragraph {
@@ -104,13 +149,25 @@
 
       font-weight: 700;
     }
+
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
 
 .work__list {
   .list__item {
-    margin-bottom: 30px;
-
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
     &-container {
       display: flex;
       justify-content: space-between;
@@ -145,15 +202,30 @@
     }
 
     ul > li {
-      margin-bottom: 7px;
+      &:not(:last-child) {
+        margin-bottom: 7px;
+      }
       list-style: square;
+    }
+
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
   }
 }
 
 .edu__list {
   .list__item {
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
 
     &-container {
       display: flex;
@@ -183,6 +255,17 @@
     a {
       text-decoration: none;
       color: gray;
+    }
+
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
   }
 }
