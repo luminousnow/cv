@@ -86,7 +86,7 @@
   .full-name {
     margin-bottom: 10px;
 
-    font-size: 2em;
+    font-size: 3em;
     color: #fbad0f;
     text-transform: uppercase;
 
@@ -99,7 +99,7 @@
   }
 
   .position {
-    font-size: 1.2em;
+    font-size: 2em;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.1em;
@@ -133,7 +133,7 @@
     &-link {
       font-style: italic;
       font-weight: 600;
-      color: gray;
+      // color: gray;
 
       text-decoration: none;
     }

@@ -7,7 +7,7 @@
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /cv/",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run s"
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
