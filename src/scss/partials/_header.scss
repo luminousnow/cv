@@ -15,16 +15,16 @@
 
 .avatar {
   position: absolute;
-  margin: 45px;
+  margin: 0px 0px 0px 38px;
   border-radius: 50%;
   overflow: hidden;
 
-  @media screen and (min-width: 768px) {
-    margin: 55px 5px 0px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin: 45px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   margin: 55px 5px 0px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   margin: 45px;
+  // }
 
   &__img {
     width: 340px;

@@ -2,28 +2,28 @@
   display: inline-flex;
 
   .aside {
-    width: 65%;
+    width: 50%;
     background-color: #e3e3e3;
 
     @media screen and (min-width: 768px) {
       // width: 230px;
-      width: 30%;
+      width: 50%;
     }
     @media screen and (min-width: 1200px) {
       // width: 430px;
-      width: 65%;
+      width: 50%;
     }
   }
 
   .indent {
-    padding-top: 245px;
+    padding-top: 185px;
 
-    @media screen and (min-width: 768px) {
-      padding-top: 110px;
-    }
-    @media screen and (min-width: 1200px) {
-      padding-top: 245px;
-    }
+    // @media screen and (min-width: 768px) {
+    //   padding-top: 110px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   padding-top: 245px;
+    // }
   }
 
   .main-info {
@@ -61,7 +61,7 @@
   &__title {
     margin-bottom: 10px;
     color: #00741b;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 10px;
@@ -84,18 +84,18 @@
   }
 
   .full-name {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     font-size: 3em;
     color: #4166a7;
-    // text-transform: uppercase;
+    text-transform: uppercase;
 
-    @media screen and (min-width: 768px) {
-      margin-bottom: 10px;
-    }
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 25px;
-    }
+    // @media screen and (min-width: 768px) {
+    //   margin-bottom: 10px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   margin-bottom: 25px;
+    // }
   }
 
   .position {
@@ -157,7 +157,7 @@
     }
     @media screen and (min-width: 1200px) {
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -215,7 +215,7 @@
     }
     @media screen and (min-width: 1200px) {
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -235,7 +235,7 @@
     }
 
     &-title {
-      font-size: 1em;
+      font-size: 0.9em;
       font-style: normal;
       font-weight: 800;
       letter-spacing: 0.1em;
@@ -264,7 +264,7 @@
     }
     @media screen and (min-width: 1200px) {
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
       }
     }
   }

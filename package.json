@@ -29,6 +29,7 @@
     "sass": "^1.34.0"
   },
   "dependencies": {
+    "bootstrap": "^5.1.2",
     "modern-normalize": "^1.1.0",
     "scss": "^0.2.4"
   }
