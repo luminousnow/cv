@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "version": "1.0.0",
-  "description": "",
+  "description": "npm run dev - running live server for dev npm run dev npm run deploy - build and\r deploy on github. See branch \"gh-page\"",
   "main": "./src/index.js",
   "scripts": {
     "dev": "parcel src/*.html",
