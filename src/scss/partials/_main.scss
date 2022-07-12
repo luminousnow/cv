@@ -1,3 +1,5 @@
+@use './variables';
+
 .main {
   display: inline-flex;
 
@@ -16,7 +18,7 @@
   }
 
   .indent {
-    padding-top: 185px;
+    padding-top: 160px;
 
     // @media screen and (min-width: 768px) {
     //   padding-top: 110px;
@@ -60,7 +62,9 @@
 
   &__title {
     margin-bottom: 10px;
-    color: #00741b;
+
+    font-size: 1.6rem;
+    color: variables.$title-color;
     text-transform: capitalize;
 
     @media screen and (min-width: 768px) {
@@ -69,6 +73,10 @@
     @media screen and (min-width: 1200px) {
       margin-bottom: 15px;
     }
+  }
+
+  &__text {
+    text-align: justify;
   }
 }
 
@@ -80,7 +88,7 @@
     padding: 10px 20px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 15px 30px;
+    padding: 40px 30px;
   }
 
   .full-name {
@@ -104,8 +112,6 @@
     font-weight: 600;
     letter-spacing: 0.1em;
     line-height: 1.26;
-
-    text-transform: uppercase;
   }
 }
 
