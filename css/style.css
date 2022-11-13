@@ -354,6 +354,15 @@ section {
   padding: 0 10px;
 }
 
+.technology-item {
+  padding: 4px 8px;
+
+  background: var(--tag-bg-color);
+  border-radius: 100px;
+
+  cursor: pointer;
+}
+
 .skill-list,
 .tool-list {
   display: flex;
@@ -376,15 +385,6 @@ section {
 
   background: var(--tag-bg-color);
   border-radius: 100px;
-
-  cursor: pointer;
-}
-
-.technology-item {
-  padding: 4px 8px;
-  background: var(--tag-bg-color);
-  border-radius: 100px;
-  font-size: 8px;
 
   cursor: pointer;
 }
