@@ -66,7 +66,7 @@ svg {
   background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .wrapper {
     width: 768px;
 
@@ -85,7 +85,7 @@ svg {
   background: linear-gradient(262.63deg, #3f3f3f 5.59%, #676767 100%);
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .header__wrapper {
     width: calc(100% - 32px);
 
@@ -107,14 +107,14 @@ svg {
   flex-direction: column-reverse;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .bio {
     flex-direction: row;
     align-items: center;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .bio__info p:nth-child(-n + 2) {
     display: inline-flex;
   }
@@ -128,7 +128,7 @@ svg {
   line-height: 1.34;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .bio__name {
     margin-right: 40px;
 
@@ -143,7 +143,7 @@ svg {
   line-height: 1.37;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .bio__position {
     position: relative;
     top: -3px;
@@ -155,7 +155,7 @@ svg {
   margin-bottom: 6px;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .bio__birth-data {
     width: 95%;
   }
@@ -165,7 +165,7 @@ svg {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .bio__location {
     width: 95%;
   }
@@ -175,7 +175,7 @@ svg {
   text-align: justify;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .bio__summary {
     width: 95%;
   }
@@ -186,7 +186,7 @@ svg {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .bio__photo {
     width: 195px;
     height: 195px;
@@ -201,7 +201,7 @@ svg {
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .main {
     flex-direction: row;
   }
@@ -221,7 +221,7 @@ section {
   padding: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   section {
     padding: 20px 30px;
   }
@@ -287,7 +287,7 @@ section {
   cursor: pointer;
 }
 
-.job__employment:hover {
+.job__employment.onFocus {
   background: var(--tag-bg-color-accent);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
@@ -322,7 +322,7 @@ section {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 767px) {
+@media print, screen and (max-width: 767px) {
   .proj__link {
     width: 45%;
     overflow: hidden;
@@ -389,9 +389,9 @@ section {
   cursor: pointer;
 }
 
-.skill-item:hover,
-.tool-item:hover,
-.technology-item:hover {
+.skill-item.onFocus,
+.tool-item.onFocus,
+.technology-item.onFocus {
   background: var(--tag-bg-color-accent);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
@@ -433,7 +433,7 @@ section {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
   .footer {
     display: flex;
     flex-direction: row;
