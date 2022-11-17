@@ -4,10 +4,20 @@ const toolTagList = document.querySelectorAll(".tool-item");
 
 const tagList = [...technologyTagList, ...skillTagList, ...toolTagList];
 
-// console.log(tagList);
+tagList.forEach((tag) => {
+  tag.addEventListener("mouseover", (e) => {
+    const inFocusList = tagList.filter(
+      (tag) => tag.textContent === e.target.textContent
+    );
 
-tagList.forEach((tag) => tag.addEventListener("mouseover", handleMouseUp));
+    inFocusList.forEach((tag) => tag.classList.add("onFocus"));
+  });
 
-function handleMouseUp(e) {
-  console.log(e.target.textContent);
-}
+  tag.addEventListener("mouseout", (e) => {
+    const inFocusList = tagList.filter(
+      (tag) => tag.textContent === e.target.textContent
+    );
+
+    inFocusList.forEach((tag) => tag.classList.remove("onFocus"));
+  });
+});
